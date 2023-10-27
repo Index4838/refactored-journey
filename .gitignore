@@ -1,0 +1,11 @@
+# Virtual Environment
+venv/
+__pycache__
+
+# Local settings
+*.sqlite3
+*.pyc
+*.pyo
+
+# Secret key
+secret_key.txt

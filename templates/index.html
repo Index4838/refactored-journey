@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Конвертер .docx в .pdf</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" action="{% url 'convert_to_pdf' %}">
+        {% csrf_token %}
+        <input type="file" name="docx_file" accept=".docx">
+        <button type="submit" id="click">Конвертировать в PDF</button>
+    </form>
+    <a id="downloadLink" href="{% url 'download_file' %}" >Скачать</a>
+
+</body>
+</html>
